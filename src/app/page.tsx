@@ -21,7 +21,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row my-4 h-fit gap-y-10 gap-x-4 lg:max-w-full max-w-xl mx-auto">
-          <AboutDev imageURL={"https://i.pravatar.cc/300"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sit numquam ex optio tenetur, inventore nisi dolor veritatis ut pariatur laudantium laborum accusantium iste sunt officiis. Velit dolores modi dignissimos."} />
+          <AboutDev imageURL={"../../public/andy.jpg"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Dr. Soffer spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
           <AboutDev imageURL={"https://i.pravatar.cc/300"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sit numquam ex optio tenetur, inventore nisi dolor veritatis ut pariatur laudantium laborum accusantium iste sunt officiis. Velit dolores modi dignissimos."} />
         </div>
       </section>
