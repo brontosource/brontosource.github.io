@@ -6,10 +6,10 @@ type AboutDevProps = {
     imageURL: string;
     title: string;
     name: string;
-    description: string;
+    children: React.ReactNode;
 }
 
-const AboutDev = ({ flipped, imageURL, title, name, description }: AboutDevProps) => {
+const AboutDev = ({ flipped, imageURL, title, name, children }: AboutDevProps) => {
     return (
         <div className={clsx("flex flex-col gap-2 sm:gap-8 h-fit lg:justify-normal justify-center", flipped ? "sm:flex-row-reverse" : "sm:flex-row")}>
             <div className="avatar">
@@ -22,8 +22,8 @@ const AboutDev = ({ flipped, imageURL, title, name, description }: AboutDevProps
                     <h3 className="text-white/55 bg-accent rounded-md w-fit px-2">{title}</h3>
                     <h3 className="text-2xl">{name}</h3>
                 </div>
-                <p className="text-white/85 h-full lg:h-fit">
-                    {description}
+                <p className="h-full lg:h-fit">
+                    {children}
                 </p>
             </div>
         </div>
