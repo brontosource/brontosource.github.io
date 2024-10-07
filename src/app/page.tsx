@@ -3,9 +3,8 @@ import SippingDrink from "../../public/BrontoSourceSippingHotDrink.svg";
 import AboutDev from "@/components/AboutDev";
 import PhoneIcon from "@/ui/icons/phone";
 import MailIcon from "@/ui/icons/mail";
-export default function Home() {
-  const AndyImage = "../../public/andy.webp"
 
+export default function Home() {
   return (
     <main className="w-full text-center max-w-[1100px] px-4 lg:mx-auto flex flex-col gap-12 py-4">
       <section>
@@ -23,8 +22,8 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row my-4 h-fit gap-y-10 gap-x-4 lg:max-w-full max-w-xl mx-auto">
-          <AboutDev imageURL={"../../public/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
-          <AboutDev imageURL={"../../public/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s std::collections::HashMap is based directly on his work."} />
+          <AboutDev imageURL={"/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
+          <AboutDev imageURL={"/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s std::collections::HashMap is based directly on his work."} />
         </div>
       </section>
       <section className="h-fit flex flex-col gap-2">
@@ -44,16 +43,7 @@ export default function Home() {
               <h3 className="text-3xl">Email</h3>
             </div>
             <p>
-              <a href="mailto:example@gmail.com">Example@gmail.com</a>
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="flex m-auto h-fit items-center gap-2">
-              <PhoneIcon />
-              <h3 className="text-3xl">Phone</h3>
-            </div>
-            <p>
-              <a href="tel:555-555-5555">+1 (555) 555-5555</a>
+              <a href="mailto:contact@brontosource.dev">Contact@BrontoSource.dev</a>
             </p>
           </div>
         </div>
