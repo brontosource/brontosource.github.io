@@ -18,12 +18,15 @@ export default function Home() {
             Who are we?
           </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sit numquam ex optio tenetur, inventore nisi dolor veritatis ut pariatur laudantium laborum accusantium iste sunt officiis. Velit dolores modi dignissimos.
+            Founded in September of 2024, BrontoSource is a team of energetic
+            ex-Google engineers focused on creating tools to modernize codebases
+            automatically.  Our first target is automatic migration of C/C++ to
+            idiomatic Rust for large code bases.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row my-4 h-fit gap-y-10 gap-x-4 lg:max-w-full max-w-xl mx-auto">
-          <AboutDev imageURL={"/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
           <AboutDev imageURL={"/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s std::collections::HashMap is based directly on his work."} />
+          <AboutDev imageURL={"/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
         </div>
       </section>
       <section className="h-fit flex flex-col gap-2">
@@ -32,7 +35,9 @@ export default function Home() {
             Contact Us
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
+            Things are early days for us at the moment but if you are interested
+            in partnering with us as an early customer or investor, please
+            reach out!
           </p>
         </div>
 
@@ -43,7 +48,7 @@ export default function Home() {
               <h3 className="text-3xl">Email</h3>
             </div>
             <p>
-              <a href="mailto:contact@brontosource.dev">Contact@BrontoSource.dev</a>
+              <a href="mailto:contact@brontosource.dev">contact@brontosource.dev</a>
             </p>
           </div>
         </div>
