@@ -23,8 +23,8 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row my-4 h-fit gap-y-10 gap-x-4 lg:max-w-full max-w-xl mx-auto">
-          <AboutDev imageURL={AndyImage} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Dr. Soffer spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
-          <AboutDev imageURL={"https://i.pravatar.cc/300"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sit numquam ex optio tenetur, inventore nisi dolor veritatis ut pariatur laudantium laborum accusantium iste sunt officiis. Velit dolores modi dignissimos."} />
+          <AboutDev imageURL={"../../public/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
+          <AboutDev imageURL={"../../public/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s std::collections::HashMap is based directly on his work."} />
         </div>
       </section>
       <section className="h-fit flex flex-col gap-2">
