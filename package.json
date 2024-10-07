@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "daisyui": "^4.11.1",
     "flowbite-react": "^0.10.2",
     "next": "^14.2.14",

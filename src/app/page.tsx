@@ -13,7 +13,7 @@ export default function Home() {
         <Image src={SippingDrink} alt={"Charlette the Bronto sipping a hot drink"} className="w-3/5 md:w-4/12 mx-auto" />
       </section>
       <section className="text-left h-fit">
-        <div className="max-w-xl text-center mx-auto mb-8">
+        <div className="max-w-3xl text-center mx-auto mb-8">
           <h2 className="text-4xl sm:text-2xl text-primary">
             Who are we?
           </h2>
@@ -24,12 +24,12 @@ export default function Home() {
             idiomatic Rust for large code bases.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row my-4 h-fit gap-y-10 gap-x-4 lg:max-w-full max-w-xl mx-auto">
+        <div className="flex flex-col my-4 h-fit gap-y-10 gap-x-4 max-w-3xl mx-auto">
           <AboutDev imageURL={"/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s std::collections::HashMap is based directly on his work."} />
-          <AboutDev imageURL={"/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
+          <AboutDev flipped imageURL={"/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
         </div>
       </section>
-      <section className="h-fit flex flex-col gap-2">
+      <section className="h-fit flex flex-col gap-2 max-w-3xl mx-auto">
         <div>
           <h2 className="text-4xl sm:text-2xl text-primary">
             Contact Us

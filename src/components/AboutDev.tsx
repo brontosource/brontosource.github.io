@@ -1,18 +1,20 @@
+import clsx from 'clsx';
 import Image from 'next/image'
 
 type AboutDevProps = {
+    flipped?: boolean;
     imageURL: string;
     title: string;
     name: string;
     description: string;
 }
 
-const AboutDev = ({ imageURL, title, name, description }: AboutDevProps) => {
+const AboutDev = ({ flipped, imageURL, title, name, description }: AboutDevProps) => {
     return (
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-8 h-fit lg:justify-normal justify-center">
+        <div className={clsx("flex flex-col gap-2 sm:gap-8 h-fit lg:justify-normal justify-center", flipped ? "sm:flex-row-reverse" : "sm:flex-row")}>
             <div className="avatar">
-                <div className="h-48 sm:h-48 rounded-2xl flex sm:aspect-square justify-end w-full">
-                    <Image src={imageURL} alt="Headshot of Andy, one of the co-founders" width={300} height={300} className='object-scale-down' />
+                <div className="h-48 rounded-2xl flex sm:aspect-square justify-end w-full">
+                    <Image src={imageURL} alt="Headshot of Andy, one of the co-founders" width={500} height={500} className='object-scale-down' />
                 </div>
             </div>
             <div className="flex flex-col justify-between lg:w-full">
