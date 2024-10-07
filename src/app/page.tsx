@@ -25,7 +25,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col my-4 h-fit gap-y-10 gap-x-4 max-w-3xl mx-auto">
-          <AboutDev imageURL={"/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s std::collections::HashMap is based directly on his work."} />
+          <AboutDev imageURL={"/matt.webp"} title={"CEO, BrontoSource"} name={"Matthew Kulukundis"} description={"Matt spent the past eleven years at Google where he led the Software Ecosystems organization as a Principal Engineer. During that time he designed language and library features for migration, as well as directly planning and executing multiple migrations of previously unapproachable difficulty. Rust’s <code>std::collections::HashMap</code> is based directly on his work."} />
           <AboutDev flipped imageURL={"/andy.webp"} title={"CTO, BrontoSource"} name={"Dr. Andrew Soffer"} description={"Andy spent the past eight years at Google where he led the C++ Refactoring team as a Staff Engineer. During that time he designed and implemented novel technologies and techniques for source-to-source migrations across Google’s monorepo, as well as executing those migrations over hundreds of millions of lines of code."} />
         </div>
       </section>
