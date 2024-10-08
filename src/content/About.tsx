@@ -1,11 +1,12 @@
 import AboutDev from '@/components/AboutDev'
-
+import AndyHeadshot from '../../public/andy.webp'
+import MattHeadshot from '../../public/matt.webp'
 const About = () => {
     const Matt = {
         name: "Matthew Kulukundis",
         title: "CEO, BrontoSource",
         image: {
-            url: "/matt.webp",
+            data: MattHeadshot,
             alt: "Headshot of Matt, CEO & co-founders"
         },
     }
@@ -13,7 +14,7 @@ const About = () => {
         name: "Dr. Andrew Soffer",
         title: "CTO, BrontoSource",
         image: {
-            url: "/andy.webp",
+            data: AndyHeadshot,
             alt: "Headshot of Andy, CTO & co-founders"
         },
     }
