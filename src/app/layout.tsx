@@ -18,6 +18,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Minor Edit for Push to Trigger
   return (
     <html lang="en" data-theme="mytheme" className="scroll-smooth">
       <body className={baloo.className}>
