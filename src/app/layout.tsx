@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Baloo_2 } from "next/font/google";
-import Drawer from "@/components/drawer";
 
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import NavLinks from "@/components/NavLinks";
 
 const baloo = Baloo_2({ subsets: ["latin"] });
 
@@ -19,7 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="mytheme" className="scroll-smooth">
       <body className={baloo.className}>
-        <Drawer>{children}</Drawer>
+        <Navbar>
+          <NavLinks />
+        </Navbar>
+        {children}
+        <Footer />
       </body>
     </html>
   );

@@ -3,18 +3,21 @@ import Image from 'next/image'
 
 type AboutDevProps = {
     flipped?: boolean;
-    imageURL: string;
+    image: {
+        url: string,
+        alt: string,
+    };
     title: string;
     name: string;
     children: React.ReactNode;
 }
 
-const AboutDev = ({ flipped, imageURL, title, name, children }: AboutDevProps) => {
+const AboutDev = ({ flipped, image, title, name, children }: AboutDevProps) => {
     return (
         <div className={clsx("flex flex-col gap-2 sm:gap-8 h-fit lg:justify-normal justify-center", flipped ? "sm:flex-row-reverse" : "sm:flex-row")}>
             <div className="avatar">
                 <div className="h-48 rounded-2xl flex sm:aspect-square justify-end w-full">
-                    <Image src={imageURL} alt="Headshot of Andy, one of the co-founders" width={500} height={500} className='object-scale-down' />
+                    <Image src={image.url} alt={image.alt} width={500} height={500} className='object-scale-down' />
                 </div>
             </div>
             <div className="flex flex-col justify-between lg:w-full">
