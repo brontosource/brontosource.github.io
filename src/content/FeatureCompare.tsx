@@ -2,6 +2,7 @@ import Image from "next/image";
 import CharletteStoneTablet from "../../public/Charlette-StoneTablet.webp";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
+import SubtitleText from "@/ui/SubtitleText";
 
 const FeatureCompare = () => {
   return (
@@ -11,12 +12,12 @@ const FeatureCompare = () => {
     >
       <span>
         <TitleText>Our Solution</TitleText>
-        <h3>
+        <SubtitleText>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
           repellendus molestias expedita obcaecati, esse voluptatibus in
           similique beatae saepe voluptas autem iste officiis explicabo aliquam,
           voluptate aliquid pariatur!
-        </h3>
+        </SubtitleText>
       </span>
       <div className="flex md:flex-row flex-col justify-between">
         <Image
