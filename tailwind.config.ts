@@ -7,20 +7,20 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/views/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/content/**/*.{js,ts,jsx,tsx,mdx}",
     flowbite.content(),
   ],
   daisyui: {
     themes: ["light", "dark", "dim", {
-      mytheme: {
+      charlette: {
         "primary": "#0bc0a5",
         "secondary": "#03322d",
         "accent": "#50877f",
         "neutral": "#707070",
-        "base-100": "#1a2d29",
-        "base-200": "#1a2d29",
-        "base-300": "#1a2d29",
-        "base-content": "#cecfc9",
+        "base-100": "#F6FDFC",
+        "base-200": "#BFF2EA",
+        "base-300": "#01725C",
+        "base-content": "#9d9496",
         "info": "#007cf2",
         "info-content": "#000514",
         "success": "#00ae7b",

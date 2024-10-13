@@ -25,7 +25,7 @@ const AboutDev = ({ flipped, image, title, name, children }: AboutDevProps) => {
                     <h3 className="text-white/55 bg-accent rounded-md w-fit px-2">{title}</h3>
                     <h3 className="text-2xl">{name}</h3>
                 </div>
-                <p className="h-full lg:h-fit">
+                <p className="h-full lg:h-fit" id='AboutDescription'>
                     {children}
                 </p>
             </div>
