@@ -8,3 +8,14 @@
     display: inline;
     padding: 2px 4px;
 }
+
+.input input:focus {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+input:is(:-webkit-autofill, :autofill) {
+  background-color: rgb(154, 65, 65);
+   color: red !important;
+}

@@ -27,7 +27,7 @@ const FeatureCompare = () => {
           className="md:block hidden lg:max-h-[32rem] md:max-h-96"
         />
         <div className="flex flex-col justify-between gap-">
-          <div className="flex flex-col-reverse justify-center">
+          <div className="flex flex-col justify-center">
             <h2>Input C++</h2>
             <div className="mockup-code text-base-100">
               <pre>
@@ -82,7 +82,7 @@ const FeatureCompare = () => {
             }}
             className="block md:hidden"
           /> */}
-          <div className="flex flex-col-reverse justify-center">
+          <div className="flex flex-col justify-center">
             <h2>BrontoSource Output</h2>
             <div className="mockup-code bg-primary text-primary-content">
               <pre>

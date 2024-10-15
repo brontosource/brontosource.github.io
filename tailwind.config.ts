@@ -12,11 +12,10 @@ const config: Config = {
   ],
   daisyui: {
     themes: [
-      "light",
       "dark",
       "dim",
       {
-        charlette: {
+        light: {
           primary: "#0bc0a5",
           secondary: "#03322d",
           accent: "#50877f",
@@ -24,8 +23,8 @@ const config: Config = {
           "base-100": "#F6FDFC",
           "base-200": "#BFF2EA",
           "base-300": "#01725C",
-          "base-content": "#5e6f6d",
-          info: "#007cf2",
+          "base-content": "#a5bdea",
+          info: "#464BC8",
           "info-content": "#000514",
           success: "#00ae7b",
           "success-content": "#000b05",

@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="charlette" className="scroll-smooth">
+    <html lang="en" data-theme="light" className="scroll-smooth">
       <body className={baloo.className}>
         <Navbar>
           <NavLinks />

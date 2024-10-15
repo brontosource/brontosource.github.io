@@ -51,7 +51,7 @@ const About = () => {
           left: 0,
         }}
       />
-      <div className="max-w-5xl text-center mx-auto mb-8">
+      <div className="text-center mb-8">
         <TitleText DarkMode>Who are we?</TitleText>
         <SubtitleText DarkMode>
           Founded in September of 2024, BrontoSource is a team of energetic
@@ -60,7 +60,7 @@ const About = () => {
           idiomatic Rust for large code bases.
         </SubtitleText>
       </div>
-      <div className="flex flex-col my-4 h-fit gap-y-10 gap-x-4 max-w-5xl mx-auto">
+      <div className="flex flex-col my-4 h-fit gap-y-10 gap-x-4">
         <AboutDev image={Matt.image} title={Matt.title} name={Matt.name}>
           Matt spent the past eleven years at Google where he led the Software
           Ecosystems organization as a Principal Engineer. During that time he
