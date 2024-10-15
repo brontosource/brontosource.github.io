@@ -37,11 +37,41 @@ const FeatureCompare = () => {
                 <code>{`    return *f;`}</code>
               </pre>
               <pre>
+                <code>{`float deref(float *f) {`}</code>
+              </pre>
+              <pre>
+                <code>{`    return *f;`}</code>
+              </pre>
+              <pre>
+                <code>{`float deref(float *f) {`}</code>
+              </pre>
+              <pre>
+                <code>{`    return *f;`}</code>
+              </pre>
+              <pre>
+                <code>{`float deref(float *f) {`}</code>
+              </pre>
+              <pre>
+                <code>{`float deref(float *f) {`}</code>
+              </pre>
+              <pre>
+                <code>{`float deref(float *f) {`}</code>
+              </pre>
+              <pre>
+                <code>{`1234567890123456789012345678901234567890`}</code>
+              </pre>
+              <pre>
+                <code>{`float deref(float *f) {`}</code>
+              </pre>
+              <pre>
+                <code>{`    return *f;`}</code>
+              </pre>
+              <pre>
                 <code>{`}`}</code>
               </pre>
             </div>
           </div>
-          <Image
+          {/* <Image
             src={CharletteStoneTablet}
             alt="Charlette the BrontoSource reading a stone tablet"
             style={{
@@ -51,8 +81,8 @@ const FeatureCompare = () => {
               maxHeight: "384px",
             }}
             className="block md:hidden"
-          />
-          <div className="flex flex-col md:flex-col-reverse justify-center">
+          /> */}
+          <div className="flex flex-col-reverse justify-center">
             <h2>BrontoSource Output</h2>
             <div className="mockup-code bg-primary text-primary-content">
               <pre>
@@ -71,11 +101,5 @@ const FeatureCompare = () => {
     </SectionContainer>
   );
 };
-
-// #![allow(dead_code, mutable_transmutes, non_camel_case_types, non_snake_case, non_upper_case_globals, unused_assignments, unused_mut)]
-// #[no_mangle]
-// pub unsafe extern "C" fn deref(mut f: *mut libc::c_float) -> libc::c_float {
-//     return *f;
-// }
 
 export default FeatureCompare;

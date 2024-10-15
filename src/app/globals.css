@@ -4,8 +4,7 @@
 
 #AboutDescription > code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-    color: #07ccaf;
+    color: #f6fdfc;
     display: inline;
-    background-color: #b7bbba65;
     padding: 2px 4px;
 }
