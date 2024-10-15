@@ -10,23 +10,21 @@ const FeatureCompare = () => {
       sectionName="feature-compare"
       sectionClasses="flex flex-col gap-8 justify-between"
     >
-      <span>
-        <TitleText>Our Solution</TitleText>
-        <SubtitleText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-          repellendus molestias expedita obcaecati, esse voluptatibus in
-          similique beatae saepe voluptas autem iste officiis explicabo aliquam,
-          voluptate aliquid pariatur!
-        </SubtitleText>
-      </span>
-      <div className="flex md:flex-row flex-col justify-between">
+      <TitleText>Our Solution</TitleText>
+      <SubtitleText>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+        repellendus molestias expedita obcaecati, esse voluptatibus in similique
+        beatae saepe voluptas autem iste officiis explicabo aliquam, voluptate
+        aliquid pariatur!
+      </SubtitleText>
+      <div className="flex md:flex-row flex-col justify-between mt-4 md:mt-8">
         <Image
           src={CharletteStoneTablet}
           alt="Charlette the BrontoSource reading a stone tablet"
-          style={{ objectFit: "cover", width: "auto", height: "100%" }}
-          className="md:block hidden lg:max-h-[32rem] md:max-h-96"
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          className="md:block hidden my-auto"
         />
-        <div className="flex flex-col justify-between gap-">
+        <div className="flex flex-col justify-between gap-4">
           <div className="flex flex-col justify-center">
             <h2>Input C++</h2>
             <div className="mockup-code text-base-100">
@@ -58,7 +56,10 @@ const FeatureCompare = () => {
                 <code>{`float deref(float *f) {`}</code>
               </pre>
               <pre>
-                <code>{`1234567890123456789012345678901234567890`}</code>
+                <code>{`123456789012345678901234567890`}</code>
+              </pre>
+              <pre>
+                <code>{`Character limit per line: 30`}</code>
               </pre>
               <pre>
                 <code>{`float deref(float *f) {`}</code>
