@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CharletteWorkingOnLaptopFromBed from "../../public/Charlette-WorkingOnLaptopFromBed.png";
+import CharletteHoldingRustLogo from "../../public/Charlette-HoldingRustLogo.png";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
@@ -42,9 +43,9 @@ const KeyFeatures = () => {
           </div>
         </div>
         <div className="card bg-base-100 w-96 shadow-xl">
-          <figure>
+          <figure className="bg-base-200">
             <Image
-              src={CharletteWorkingOnLaptopFromBed}
+              src={CharletteHoldingRustLogo}
               alt="Charlette working on laptop from bed"
             />
           </figure>
