@@ -24,7 +24,7 @@ const config: Config = {
           "base-200": "#BFF2EA",
           "base-300": "#01725C",
           "base-content": "#a5bdea",
-          info: "#464BC8",
+          info: "#36398c",
           "info-content": "#000514",
           success: "#00ae7b",
           "success-content": "#000b05",

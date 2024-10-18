@@ -30,8 +30,10 @@ const KeyFeatures = () => {
             alt: "Charlette the Bronto working on laptop from bed",
           }}
           title={"lorem ipsum dolor sit amet"}
-          content={"lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"}
-          showButton={true}
+          content={
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"
+          }
+          showButton
         />
         <FeatCard
           image={{
@@ -39,10 +41,10 @@ const KeyFeatures = () => {
             alt: "Charlette the Bronto Looking at Rust, C, and C++ logos",
           }}
           title={"lorem ipsum dolor sit amet"}
-          content={"lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"}
-          showButton={true}
+          content={
+            "lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"
+          }
         />
-        
       </div>
     </SectionContainer>
   );

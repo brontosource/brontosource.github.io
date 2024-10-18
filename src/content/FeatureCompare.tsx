@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CharletteStoneTablet from "../../public/Charlette-StoneTablet-wShadow.png";
+import CharletteStoneTablet from "../../public/Charlette-StoneTablet.webp";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";

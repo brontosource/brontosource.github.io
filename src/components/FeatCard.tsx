@@ -1,14 +1,14 @@
 import Image, { StaticImageData } from "next/image"
 
 type FeatCardProps = {
-    image: {
-        data: StaticImageData,
-        alt: string,
-    };
-    title: string;
-    content: string;
-    showButton: boolean;
-}
+  image: {
+    data: StaticImageData;
+    alt: string;
+  };
+  title: string;
+  content: string;
+  showButton?: boolean;
+};
 
 const FeatCard = ({ image, title, content, showButton }: FeatCardProps) => {
     return (
