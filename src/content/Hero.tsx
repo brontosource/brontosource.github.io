@@ -1,6 +1,8 @@
 import Image from "next/image"
 import SippingDrink from "../../public/BrontoSourceSippingHotDrink.svg";
 import SectionContainer from "@/ui/SectionContainer";
+import TitleText from "@/ui/TitleText";
+import SubtitleText from "@/ui/SubtitleText";
 
 const Hero = () => {
   return (
@@ -16,15 +18,15 @@ const Hero = () => {
             }}
           />
           <div>
-            <h1 className="text-5xl font-bold">
+            <TitleText sectionClasses="text-5xl font-bold text-primary">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </h1>
-            <p className="py-6">
+            </TitleText>
+            <SubtitleText sectionClasses="py-6 text-primary-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               iusto autem dolores quam quod, reprehenderit saepe ipsam amet
               facere non ipsa voluptas rerum beatae ipsum dignissimos voluptatum
               fugiat voluptates recusandae!
-            </p>
+            </SubtitleText>
           </div>
         </div>
       </div>

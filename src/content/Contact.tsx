@@ -107,7 +107,7 @@ const Contact = () => {
         <button
           type="submit"
           value="Submit"
-          className="btn btn-accent w-40 mb-4 mx-auto"
+          className="btn btn-primary w-40 mb-4 mx-auto"
         >
           Send
         </button>

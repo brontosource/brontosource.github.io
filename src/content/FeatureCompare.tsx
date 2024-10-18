@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CharletteStoneTablet from "../../public/Charlette-StoneTablet.webp";
+import CharletteStoneTablet from "../../public/Charlette-StoneTablet-wShadow.png";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
@@ -17,13 +17,14 @@ const FeatureCompare = () => {
         beatae saepe voluptas autem iste officiis explicabo aliquam, voluptate
         aliquid pariatur!
       </SubtitleText>
-      <div className="flex md:flex-row flex-col justify-between mt-4 md:mt-8">
-        <Image
-          src={CharletteStoneTablet}
-          alt="Charlette the BrontoSource reading a stone tablet"
-          style={{ objectFit: "cover", width: "100%", height: "100%" }}
-          className="md:block hidden my-auto"
-        />
+      <div className="flex md:flex-row flex-col mt-4 md:mt-8 h-full justify-between">
+        <div className="md:block lg:max-w-[510px] hidden mt-auto h-full">
+          <Image
+            src={CharletteStoneTablet}
+            alt="Charlette the BrontoSource reading a stone tablet"
+            style={{ objectFit: "cover", height: "100%" }}
+          />
+        </div>
         <div className="flex flex-col justify-between gap-4">
           <div className="flex flex-col justify-center">
             <h2>Input C++</h2>

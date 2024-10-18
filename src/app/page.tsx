@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center snap-y scroll-smooth gap-y-16 lg:gap-y-32">
       <Hero />
-      <KeyFeatures />
       <About />
       <FeatureCompare />
+      <KeyFeatures />
       <Contact />
     </main>
   );

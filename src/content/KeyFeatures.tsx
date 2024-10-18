@@ -4,6 +4,7 @@ import CharletteHoldingRustLogo from "../../public/Charlette-HoldingRustLogo.png
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
+import FeatCard from "@/components/FeatCard";
 
 const KeyFeatures = () => {
   return (
@@ -22,64 +23,26 @@ const KeyFeatures = () => {
           voluptates recusandae!
         </SubtitleText>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 items-center">
-        <div className="card bg-base-100 w-96 shadow-xl">
-          <figure className="bg-base-200 pl-2 pt-2">
-            <Image
-              src={CharletteWorkingOnLaptopFromBed}
-              alt="Charlette working on laptop from bed"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Lorem ipsum dolor sit amet consectetur
-            </h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              molestias repudiandae voluptates nostrum doloremque, totam nemo
-              dolores quis illo ex incidunt quasi cum nobis maiores fuga odio!
-              Modi, vel sequi!
-            </p>
-          </div>
-        </div>
-        <div className="card bg-base-100 w-96 shadow-xl">
-          <figure className="bg-base-200">
-            <Image
-              src={CharletteHoldingRustLogo}
-              alt="Charlette working on laptop from bed"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Lorem ipsum dolor sit amet consectetur
-            </h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              molestias repudiandae voluptates nostrum doloremque, totam nemo
-              dolores quis illo ex incidunt quasi cum nobis maiores fuga odio!
-              Modi, vel sequi!
-            </p>
-          </div>
-        </div>
-        <div className="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <Image
-              src={CharletteWorkingOnLaptopFromBed}
-              alt="Charlette working on laptop from bed"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Lorem ipsum dolor sit amet consectetur
-            </h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              molestias repudiandae voluptates nostrum doloremque, totam nemo
-              dolores quis illo ex incidunt quasi cum nobis maiores fuga odio!
-              Modi, vel sequi!
-            </p>
-          </div>
-        </div>
+      <div className="flex md:grid md:grid-flow-col gap-4 flex-wrap">
+        <FeatCard
+          image={{
+            data: CharletteWorkingOnLaptopFromBed,
+            alt: "Charlette the Bronto working on laptop from bed",
+          }}
+          title={"lorem ipsum dolor sit amet"}
+          content={"lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"}
+          showButton={true}
+        />
+        <FeatCard
+          image={{
+            data: CharletteHoldingRustLogo,
+            alt: "Charlette the Bronto Looking at Rust, C, and C++ logos",
+          }}
+          title={"lorem ipsum dolor sit amet"}
+          content={"lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"}
+          showButton={true}
+        />
+        
       </div>
     </SectionContainer>
   );
