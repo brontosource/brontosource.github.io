@@ -9,7 +9,7 @@ import FeatCard from "@/components/FeatCard";
 const KeyFeatures = () => {
   return (
     <SectionContainer
-      sectionName="hero"
+      sectionName="key-features"
       innerContainerClasses="flex flex-col gap-y-10"
     >
       <div>
