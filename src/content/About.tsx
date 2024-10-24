@@ -1,8 +1,8 @@
 import AboutDev from '@/components/AboutDev'
 import AndyHeadshot from '../../public/andy.webp'
 import MattHeadshot from '../../public/matt.webp'
-import TopWave from "../../public/top-wave-scaless.svg";
-import botWave from "../../public/bot-wave-scaless.svg";
+import TopWave from "../../public/about-top-wave.svg";
+import BotWave from "../../public/about-bot-wave.svg";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
 import SectionContainer from "@/ui/SectionContainer";
@@ -33,10 +33,18 @@ const About = () => {
     >
       <TopWave
         style={{
-          width: "100%",
+          width: "100vw",
           position: "absolute",
           bottom: "100%",
-          right: 0,
+          right: -15,
+        }}
+      />
+      <BotWave
+        style={{
+          width: "100vw",
+          position: "absolute",
+          top: "100%",
+          left: 0,
         }}
       />
       <div className="text-center mb-8">

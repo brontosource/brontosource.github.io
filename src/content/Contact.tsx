@@ -9,7 +9,7 @@ import SubtitleText from "@/ui/SubtitleText";
 import TitleText from "@/ui/TitleText";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import topContactWave from "../../public/contact-top-waves.svg";
+import TopWaves from "../../public/contact-top-waves.svg";
 
 const Contact = () => {
   const router = useRouter();
@@ -37,14 +37,12 @@ const Contact = () => {
       sectionName="contact"
       isFullWidth
     >
-      <Image
-        src={topContactWave}
-        alt={"decorative waves at top of contact section"}
+      <TopWaves
         style={{
           width: "100vw",
           position: "absolute",
           bottom: "100%",
-          left: 0,
+          right: 0,
         }}
       />
       <div>
