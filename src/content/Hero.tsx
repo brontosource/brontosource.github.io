@@ -1,5 +1,5 @@
 import Image from "next/image"
-import SippingDrink from "../../public/BrontoSourceSippingHotDrink.svg";
+import SippingDrink from "../../public/BrontoSourceSippingHotDrink.svg?url";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";

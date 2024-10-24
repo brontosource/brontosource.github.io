@@ -1,7 +1,7 @@
 import AboutDev from '@/components/AboutDev'
 import AndyHeadshot from '../../public/andy.webp'
 import MattHeadshot from '../../public/matt.webp'
-import topWave from "../../public/top-wave-scaless.svg";
+import TopWave from "../../public/top-wave-scaless.svg";
 import botWave from "../../public/bot-wave-scaless.svg";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
@@ -31,24 +31,12 @@ const About = () => {
       sectionName="about"
       isFullWidth
     >
-      <Image
-        src={topWave}
-        alt="Charlette the BrontoSource reading a stone tablet"
-        style={{
-          width: "100vw",
-          position: "absolute",
-          bottom: "100%",
-          left: 0,
-        }}
-      />
-      <Image
-        src={botWave}
-        alt="Charlette the BrontoSource reading a stone tablet"
+      <TopWave
         style={{
           width: "100%",
           position: "absolute",
-          top: "100%",
-          left: 0,
+          bottom: "100%",
+          right: 0,
         }}
       />
       <div className="text-center mb-8">
