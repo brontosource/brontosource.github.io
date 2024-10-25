@@ -41,7 +41,7 @@ const Contact = () => {
         style={{
           width: "100vw",
           position: "absolute",
-          bottom: "99.5%",
+          bottom: "99%",
           right: 0,
         }}
       />
