@@ -22,10 +22,10 @@ const FeatureCompare = () => {
         beatae saepe voluptas autem iste officiis explicabo aliquam, voluptate
         aliquid pariatur!
       </SubtitleText>
-      <div className="flex lg:flex-row flex-col mt-4 md:mt-8 h-full justify-between">
+      <div className="flex lg:flex-row flex-col mt-4 md:mt-8 h-full w-full justify-between gap-6">
         <div className="flex flex-col justify-center">
           <h2>Input C++</h2>
-          <div className="mockup-code text-sm md:text-base text-base-100 relative">
+          <div className="mockup-code text-sm text-base-100 relative">
             {CPPlineArray.map((line, i) => (
               <pre key={i}>
                 <code>{`${line}`}</code>
@@ -42,7 +42,7 @@ const FeatureCompare = () => {
         </div>
         <div className="flex flex-col justify-center">
           <h2>BrontoSource Output</h2>
-          <div className="mockup-code bg-primary text-primary-content h-full">
+          <div className="mockup-code bg-primary text-sm text-primary-content h-full">
             {RustlineArray.map((line, i) => (
               <pre key={i}>
                 <code>{`${line}`}</code>
