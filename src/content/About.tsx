@@ -36,7 +36,7 @@ const About = () => {
           width: "100vw",
           position: "absolute",
           bottom: "100%",
-          right: -15,
+          right: 0,
         }}
       />
       <BotWave
