@@ -35,7 +35,7 @@ const About = () => {
         style={{
           width: "100vw",
           position: "absolute",
-          bottom: "100%",
+          bottom: "99.5%",
           right: 0,
         }}
       />
@@ -43,7 +43,7 @@ const About = () => {
         style={{
           width: "100vw",
           position: "absolute",
-          top: "100%",
+          top: "99.5%",
           left: 0,
         }}
       />
