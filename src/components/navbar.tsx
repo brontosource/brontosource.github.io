@@ -21,7 +21,7 @@ const NavBar: FC<NavBarProps> = ({ children }) => {
         isMounted && y > 50 && "shadow-primary-900 shadow-md"
       )}
     >
-      <div className="h-full flex flex-col justify-center max-w-[1024px] lg:mx-auto mx-4 px-0 lg:px-4 ">
+      <div className="h-full flex flex-col justify-center max-w-[1024px] lg:mx-auto mx-4">
         <div className="flex justify-between items-center relative">
           <div className="max-w-[183px] lg:max-w-[163px]">
             <Link href="/">

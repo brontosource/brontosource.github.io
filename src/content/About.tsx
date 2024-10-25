@@ -26,7 +26,7 @@ const About = () => {
   };
   return (
     <SectionContainer
-      sectionClasses="text-left h-fit bg-base-300 relative py-2 my-10 md:my-0"
+      sectionClasses="text-left h-fit bg-base-300 relative py-2 my-10 md:my-0 py-[120px]"
       sectionName="about"
       isFullWidth
     >
@@ -34,19 +34,23 @@ const About = () => {
         style={{
           width: "100vw",
           position: "absolute",
-          bottom: "99%",
+          top: -1,
           right: 0,
           zIndex: 1,
+          overflow: "hidden",
+          lineHeight: 0,
+          fill: "#F6FDFC",
         }}
       />
       <BotWave
         style={{
           width: "100vw",
           position: "absolute",
-          top: "99%",
+          bottom: -1,
           right: 0,
           zIndex: 1,
           rotate: "180deg",
+          fill: "#F6FDFC",
         }}
       />
       <div className="text-center mb-8">
