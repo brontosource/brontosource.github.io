@@ -13,6 +13,7 @@ const FeatureCompare = () => {
     <SectionContainer
       sectionName="feature-compare"
       sectionClasses="flex flex-col gap-8 justify-between"
+      innerContainerClasses="w-full"
     >
       <TitleText>Our Solution</TitleText>
       <SubtitleText>
@@ -24,7 +25,7 @@ const FeatureCompare = () => {
       <div className="flex lg:flex-row flex-col mt-4 md:mt-8 h-full justify-between">
         <div className="flex flex-col justify-center">
           <h2>Input C++</h2>
-          <div className="mockup-code text-base-100 relative">
+          <div className="mockup-code text-sm md:text-base text-base-100 relative">
             {CPPlineArray.map((line, i) => (
               <pre key={i}>
                 <code>{`${line}`}</code>

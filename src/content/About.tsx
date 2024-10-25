@@ -6,7 +6,6 @@ import BotWave from "../../public/about-bot-wave.svg";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
 import SectionContainer from "@/ui/SectionContainer";
-import Image from "next/image";
 
 const About = () => {
   const Matt = {
@@ -37,6 +36,7 @@ const About = () => {
           position: "absolute",
           bottom: "99%",
           right: 0,
+          zIndex: 1,
         }}
       />
       <BotWave
@@ -44,7 +44,9 @@ const About = () => {
           width: "100vw",
           position: "absolute",
           top: "99%",
-          left: 0,
+          right: 0,
+          zIndex: 1,
+          rotate: "180deg",
         }}
       />
       <div className="text-center mb-8">
