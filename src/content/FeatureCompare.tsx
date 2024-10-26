@@ -31,7 +31,7 @@ const FeatureCompare = () => {
                 <code>{`${line}`}</code>
               </pre>
             ))}
-            <div className="w-1/3 bottom-0 right-0 scale-x-[-1] absolute">
+            <div className="w-1/4 sm:w-1/3 bottom-0 right-0 scale-x-[-1] absolute">
               <Image
                 src={CharletteStoneTablet}
                 alt="Charlette the BrontoSource reading a stone tablet"
