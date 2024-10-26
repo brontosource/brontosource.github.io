@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <SectionContainer
-      sectionClasses="text-center bg-info py-6 mt-10 relative"
+      sectionClasses="text-center bg-info py-6 mt-16 relative xl:mt-64"
       innerContainerClasses="flex flex-col gap-8"
       sectionName="contact"
       isFullWidth
