@@ -26,7 +26,7 @@ const About = () => {
   };
   return (
     <SectionContainer
-      sectionClasses="text-left h-fit bg-base-300 relative py-2 my-10 md:my-0 py-[120px]"
+      sectionClasses="text-left h-fit bg-base-300 relative py-2 my-10 md:my-0 py-[140px] xl:py-[180px] 2xl:py-[320px]"
       sectionName="about"
       isFullWidth
     >
