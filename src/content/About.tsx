@@ -13,7 +13,7 @@ const About = () => {
     title: "CEO, BrontoSource",
     image: {
       data: MattHeadshot,
-      alt: "Headshot of Matt, CEO & co-founders",
+      alt: "Headshot of Matt, CEO & co-founder",
     },
   };
   const Andy = {
@@ -21,7 +21,7 @@ const About = () => {
     title: "CTO, BrontoSource",
     image: {
       data: AndyHeadshot,
-      alt: "Headshot of Andy, CTO & co-founders",
+      alt: "Headshot of Andy, CTO & co-founder",
     },
   };
   return (
@@ -54,7 +54,7 @@ const About = () => {
         }}
       />
       <div className="text-center mb-8">
-        <TitleText DarkMode>Who are we?</TitleText>
+        <TitleText DarkMode>About Us</TitleText>
         <SubtitleText DarkMode>
           Founded in September of 2024, BrontoSource is a team of energetic
           ex-Google engineers focused on creating tools to modernize codebases
@@ -68,13 +68,20 @@ const About = () => {
           Ecosystems organization as a Principal Engineer. During that time he
           designed language and library features for migration, as well as
           directly planning and executing multiple migrations of previously
-          unapproachable difficulty. Rust’s{" "}
-          <code>std::collections::HashMap</code> is based directly on his work.
+          unapproachable difficulty. Rust’s {" "}
+          <a className="underline decoration-dotted underline-offset-2"
+            href="https://doc.rust-lang.org/std/collections/struct.HashMap.html"
+          >
+            <code>std::collections::HashMap</code>
+          </a>
+          {" "} is based directly on {" "}
+          <a className="underline decoration-dotted underline-offset-2"
+            href="https://www.youtube.com/watch?v=ncHmEUmJZf4"
+          >
+            his work
+          </a>.
         </AboutDev>
-        <AboutDev
-          flipped
-          image={Andy.image}
-          title={Andy.title}
+        <AboutDev flipped image={Andy.image} title={Andy.title}
           name={Andy.name}
         >
           Andy spent the past eight years at Google where he led the C++
