@@ -27,7 +27,7 @@ const KeyFeatures = () => {
         <FeatCard
           image={{
             data: CharlotteWorkingOnLaptopFromBed,
-            alt: "Charlotte the Bronto working on laptop from bed",
+            alt: "Charlotte Bronto working on laptop from bed",
           }}
           title={"lorem ipsum dolor sit amet"}
           content={
@@ -38,7 +38,7 @@ const KeyFeatures = () => {
         <FeatCard
           image={{
             data: CharlotteHoldingRustLogo,
-            alt: "Charlotte the Bronto Looking at Rust, C, and C++ logos",
+            alt: "Charlotte Bronto Looking at Rust, C, and C++ logos",
           }}
           title={"lorem ipsum dolor sit amet"}
           content={

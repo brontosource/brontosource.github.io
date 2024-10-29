@@ -34,7 +34,7 @@ const FeatureCompare = () => {
             <div className="w-1/4 sm:w-1/3 bottom-0 right-0 scale-x-[-1] absolute">
               <Image
                 src={CharlotteStoneTablet}
-                alt="Charlotte the BrontoSource reading a stone tablet"
+                alt="Charlotte Bronto reading a stone tablet"
                 style={{ objectFit: "cover", height: "100%" }}
               />
             </div>
