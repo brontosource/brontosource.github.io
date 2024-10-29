@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CharletteStoneTablet from "../../public/Charlette-StoneTablet.webp";
+import CharlotteStoneTablet from "../../public/Charlotte-StoneTablet.webp";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
@@ -33,8 +33,8 @@ const FeatureCompare = () => {
             ))}
             <div className="w-1/4 sm:w-1/3 bottom-0 right-0 scale-x-[-1] absolute">
               <Image
-                src={CharletteStoneTablet}
-                alt="Charlette the BrontoSource reading a stone tablet"
+                src={CharlotteStoneTablet}
+                alt="Charlotte the BrontoSource reading a stone tablet"
                 style={{ objectFit: "cover", height: "100%" }}
               />
             </div>

@@ -12,7 +12,7 @@ const Hero = () => {
           <Image
             src={SippingDrink}
             className="max-w-sm hidden sm:block"
-            alt={"Charlette the Bronto sipping on a hot drink"}
+            alt={"Charlotte the Bronto sipping on a hot drink"}
             style={{
               transform: "scale(-1, 1)",
             }}
