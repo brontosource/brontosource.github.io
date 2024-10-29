@@ -56,10 +56,11 @@ const About = () => {
       <div className="text-center mb-8">
         <TitleText DarkMode>About Us</TitleText>
         <SubtitleText DarkMode>
-          Founded in September of 2024, BrontoSource is a team of energetic
-          ex-Google engineers focused on creating tools to modernize codebases
-          automatically. Our first target is automatic migration of C/C++ to
-          idiomatic Rust for large code bases.
+          Founded in September 2024, by a team of energetic ex-Google engineers.
+          We are a focused on building tools that anticipate the entire the
+          entire software lifecycle.  Collectively, we bring decades of
+          experience maintaining the world's largest codebases, keeping them
+          healthy and making them self-healing.
         </SubtitleText>
       </div>
       <div className="flex flex-col my-4 h-fit gap-y-10 gap-x-4">

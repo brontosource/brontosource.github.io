@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <Image
             src={SippingDrink}
-            className="max-w-sm hidden sm:block -scale-1"
+            className="max-w-sm hidden sm:block"
             alt={"Charlotte Bronto sipping a hot drink"}
             style={{
               transform: "scale(-1, 1)",
@@ -19,13 +19,19 @@ const Hero = () => {
           />
           <div>
             <TitleText sectionClasses="text-5xl font-bold text-primary">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Modernizing old code at scale.
             </TitleText>
-            <SubtitleText sectionClasses="py-6 text-primary-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              iusto autem dolores quam quod, reprehenderit saepe ipsam amet
-              facere non ipsa voluptas rerum beatae ipsum dignissimos voluptatum
-              fugiat voluptates recusandae!
+            <SubtitleText sectionClasses="space-y-4 py-6 text-primary-content">
+              Legacy code is a massive source of technical, strategic, and
+              legal risk whose costs only grow with time.
+              <p/><p/>
+              BrontoSource provides end-to-end solutions that incrementally
+              update old codebases and keep them clean into the future.
+              <p/><p/>
+              Our approach combines decades of experience keeping the world's
+              largest codebases up to date with innovative algorithms and AI
+              that provide incremental, understandable, and traceable migrations
+              that scale sublinearly in the size of the code base.
             </SubtitleText>
           </div>
         </div>
