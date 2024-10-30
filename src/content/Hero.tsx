@@ -23,7 +23,7 @@ const Hero = () => {
             </TitleText>
             <SubtitleText sectionClasses="space-y-4 py-6 text-primary-content">
               Legacy code is a massive source of technical, strategic, and
-              legal risk whose costs only grow with time.
+              legal risk. Its costs only grow with time.
               <p/><p/>
               BrontoSource provides end-to-end solutions that incrementally
               update old codebases and keep them clean into the future.
