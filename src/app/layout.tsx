@@ -10,7 +10,7 @@ const baloo = Baloo_2({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BrontoSource",
-  description: "a system that transforms C code to idiomatic, safe Rust with a human intervention rate below 1 intervention per 100,000 lines of code that scales sublinearly in the size of the code base being migrated",
+  description: "A system that transforms C code to idiomatic, safe Rust with a human intervention rate below 1 intervention per 100,000 lines of code that scales sublinearly in the size of the code base being migrated.",
 };
 
 export default function RootLayout({
