@@ -18,10 +18,10 @@ import 'highlight.js/styles/shades-of-purple.css';
 hljs.registerLanguage('rust', rust);
 hljs.registerLanguage('c', c);
 
-const FeatureCompare = () => {
+const Solutions = () => {
   return (
     <SectionContainer
-      sectionName="feature-compare"
+      sectionName="solutions"
       sectionClasses="flex flex-col gap-8 justify-between"
       innerContainerClasses="w-full"
     >
@@ -99,4 +99,4 @@ pub fn fizz_buzz(n: i32) -> Vec<String> {
   );
 };
 
-export default FeatureCompare;
+export default Solutions;

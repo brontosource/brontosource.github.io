@@ -57,8 +57,8 @@ const About = () => {
         <TitleText DarkMode>About Us</TitleText>
         <SubtitleText DarkMode>
           Founded in September 2024, by a team of energetic ex-Google engineers.
-          We are a focused on building tools that anticipate the entire the
-          entire software lifecycle.  Collectively, we bring decades of
+          We love seeing codebases flourish and building tools that anticipate
+          the entire software lifecycle.  Collectively, we bring decades of
           experience maintaining the world's largest codebases, keeping them
           healthy and making them self-healing.
         </SubtitleText>

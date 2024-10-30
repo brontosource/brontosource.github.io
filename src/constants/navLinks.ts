@@ -10,9 +10,9 @@ export const navLinkList = [
     url: "#about",
   },
   {
-    label: "Example",
+    label: "Solutions",
     style: "default",
-    url: "#feature-compare",
+    url: "#solutions",
   },
   {
     label: "Features",
