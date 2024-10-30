@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CharletteWorkingOnLaptopFromBed from "../../public/Charlette-WorkingOnLaptopFromBed.png";
-import CharletteHoldingRustLogo from "../../public/Charlette-HoldingRustLogo.png";
+import CharlotteWorkingOnLaptopFromBed from "../../public/Charlotte-WorkingOnLaptopFromBed.png";
+import CharlotteHoldingRustLogo from "../../public/Charlotte-HoldingRustLogo.png";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
@@ -26,8 +26,8 @@ const KeyFeatures = () => {
       <div className="flex md:grid md:grid-flow-col gap-4 flex-wrap">
         <FeatCard
           image={{
-            data: CharletteWorkingOnLaptopFromBed,
-            alt: "Charlette the Bronto working on laptop from bed",
+            data: CharlotteWorkingOnLaptopFromBed,
+            alt: "Charlotte Bronto working on laptop from bed",
           }}
           title={"lorem ipsum dolor sit amet"}
           content={
@@ -37,8 +37,8 @@ const KeyFeatures = () => {
         />
         <FeatCard
           image={{
-            data: CharletteHoldingRustLogo,
-            alt: "Charlette the Bronto Looking at Rust, C, and C++ logos",
+            data: CharlotteHoldingRustLogo,
+            alt: "Charlotte Bronto Looking at Rust, C, and C++ logos",
           }}
           title={"lorem ipsum dolor sit amet"}
           content={

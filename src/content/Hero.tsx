@@ -1,5 +1,5 @@
 import Image from "next/image"
-import SippingDrink from "../../public/BrontoSourceSippingHotDrink.svg?url";
+import SippingDrink from "../../public/Charlotte-HoldingTea.png";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
@@ -11,8 +11,8 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <Image
             src={SippingDrink}
-            className="max-w-sm hidden sm:block"
-            alt={"Charlette the Bronto sipping on a hot drink"}
+            className="max-w-sm hidden sm:block -scale-1"
+            alt={"Charlotte Bronto sipping a hot drink"}
             style={{
               transform: "scale(-1, 1)",
             }}
