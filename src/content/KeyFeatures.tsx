@@ -1,4 +1,3 @@
-import Image from "next/image";
 import CharlotteWorkingOnLaptopFromBed from "../../public/Charlotte-WorkingOnLaptopFromBed.png";
 import CharlotteHoldingRustLogo from "../../public/Charlotte-HoldingRustLogo.png";
 import SectionContainer from "@/ui/SectionContainer";

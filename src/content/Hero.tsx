@@ -21,13 +21,13 @@ const Hero = () => {
             <TitleText sectionClasses="text-5xl font-bold text-primary">
               Modernizing old code at scale.
             </TitleText>
-            <SubtitleText sectionClasses="space-y-4 py-6 text-primary-content">
+            <SubtitleText sectionClasses="py-6">
               Legacy code is a massive source of technical, strategic, and
               legal risk. Its costs only grow with time.
-              <p/><p/>
+              <p/>
               BrontoSource provides end-to-end solutions that incrementally
               update old codebases and keep them clean into the future.
-              <p/><p/>
+              <p/>
               Our approach combines decades of experience keeping the world's
               largest codebases up to date with innovative algorithms and AI
               that provide incremental, understandable, and traceable migrations

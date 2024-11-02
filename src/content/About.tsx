@@ -58,9 +58,9 @@ const About = () => {
         <SubtitleText DarkMode>
           Founded in September 2024, by a team of energetic ex-Google engineers.
           We love seeing codebases flourish and building tools that anticipate
-          the entire software lifecycle.  Collectively, we bring decades of
-          experience maintaining the world's largest codebases, keeping them
-          healthy and making them self-healing.
+          the entire software lifecycle.  We bring decades of experience
+          maintaining the world's largest codebases, keeping them healthy and
+          making them self-healing.
         </SubtitleText>
       </div>
       <div className="flex flex-col my-4 h-fit gap-y-10 gap-x-4">
@@ -70,15 +70,11 @@ const About = () => {
           designed language and library features for migration, as well as
           directly planning and executing multiple migrations of previously
           unapproachable difficulty. Rust’s {" "}
-          <a className="underline decoration-dotted underline-offset-2"
-            href="https://doc.rust-lang.org/std/collections/struct.HashMap.html"
-          >
+          <a href="https://doc.rust-lang.org/std/collections/struct.HashMap.html">
             <code>std::collections::HashMap</code>
           </a>
           {" "} is based directly on {" "}
-          <a className="underline decoration-dotted underline-offset-2"
-            href="https://www.youtube.com/watch?v=ncHmEUmJZf4"
-          >
+          <a href="https://www.youtube.com/watch?v=ncHmEUmJZf4">
             his work
           </a>.
         </AboutDev>
