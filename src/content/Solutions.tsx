@@ -27,69 +27,25 @@ const Solutions = () => {
     >
       <TitleText>Our Solution</TitleText>
       <SubtitleText>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-        repellendus molestias expedita obcaecati, esse voluptatibus in similique
-        beatae saepe voluptas autem iste officiis explicabo aliquam, voluptate
-        aliquid pariatur!
+        BrontoSource provides incremental, reproducible, understanble migrations
+        that fit into existing workflows leaving behind clean, idiomatic code.
+        BrontoSource migrates components of large systems independetly, allowing
+        developers to extend their codebase while the upgrade progresses in the
+        background, modernizing your codebase and eliminating long-term risks.
+        <p/>
+        Effective migrations require incremental updates that provide
+        incremental value.  Bug-for-bug replacements are routinely behind
+        schedule, over budget, and leave a nest of special case logic that
+        developers are afraid to change. Full system rewrites delay the
+        technical risk to deployment, causing unexpected delays and late
+        discovery of <a href="https://www.hyrumslaw.com/">implicit
+        requirements</a>.  In both cases, teams have to maintain two systems
+        while the second one is being built, splitting their focus and efforts.
+        <p/>
+        After BrontoSource has finished modernizing a codebase, it can continue
+        operating in the background providing ongoing updates and security
+        patches ensuring your codebase stays clean into the future.
       </SubtitleText>
-      <div className="flex lg:flex-row flex-col mt-4 md:mt-8 h-full w-full justify-between gap-6">
-        <div className="flex flex-col justify-center">
-          <h2>Input C++</h2>
-          <div className="mockup-code text-base-100 relative">
-          <pre dangerouslySetInnerHTML={{__html:
-            hljs.highlight(`
-#include <stdio.h>
-
-  int main() {                                    
-    int i;
-    for (i = 1; i <= 100; ++i) {
-      if (i % 3 == 0) printf("Fizz");
-      if (i % 5 == 0) printf("Buzz");
-      if ((i % 3 != 0) && (i % 5 != 0)) {
-        printf("number=%d", i);
-      }
-      printf("\\n");
-    }
- 
-    return 0;
-  }`.trim(), {language: 'c'}).value
-/* leading extra 1-space indent accounts for an invisible pre:: */
-/* int main() { has trailing whitespace to make the box a bit wider */
-          }} />
-            <div className="w-1/4 sm:w-1/3 bottom-1 right-0 scale-x-[-1] absolute">
-              <Image
-                src={CharlotteStoneTablet}
-                alt="Charlotte Bronto reading a stone tablet"
-                style={{ objectFit: "cover", height: "100%" }}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center">
-          <h2>BrontoSource Output</h2>
-          <div className="mockup-code bg-base-300 text-base-100 h-full">
-          <pre dangerouslySetInnerHTML={{__html:
-hljs.highlight(`
-fn main() {                            
-    for i in 1..=100 {
-      if i % 3 == 0 {
-        print!("Fizz");
-      }
-      if i % 5 == 0 {
-        print!("Buzz");
-      }
-      if i % 3 != 0 && i % 5 != 0 {
-        print!("number={}", i);
-      }
-      println!();
-    }
-  }`.trim(), {language: 'rust'}).value
-/* leading extra 2-space indent accounts for an invisible pre:: */
-/* fn main() { has trailing whitespace to make the box a bit wider */
-          }} />
-          </div>
-        </div>
-      </div>
     </SectionContainer>
   );
 };

@@ -2,6 +2,7 @@ import About from "@/content/About";
 import Contact from "@/content/Contact";
 import Solutions from "@/content/Solutions";
 import Hero from "@/content/Hero";
+import Rust from "@/content/Rust";
 import KeyFeatures from "@/content/KeyFeatures";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Solutions />
-      <KeyFeatures />
+      <Rust />
       <Contact />
     </main>
   );

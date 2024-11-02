@@ -14,11 +14,13 @@ export const navLinkList = [
     style: "default",
     url: "#solutions",
   },
+  /*
   {
     label: "Features",
     style: "default",
     url: "#key-features",
   },
+  */
   {
     label: "Contact",
     style: "default",
