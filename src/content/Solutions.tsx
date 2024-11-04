@@ -1,22 +1,6 @@
-import Image from "next/image";
-import CharlotteStoneTablet from "../../public/Charlotte-StoneTablet.webp";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
-import hljs from "highlight.js/lib/core";
-import rust from "highlight.js/lib/languages/rust";
-import c from "highlight.js/lib/languages/c";
-import "highlight.js/styles/shades-of-purple.css";
-// runners up for syntax highlighting:
-// import 'highlight.js/styles/agate.css';
-// import 'highlight.js/styles/devibeans.css';
-// import 'highlight.js/styles/felipec.css';
-// import 'highlight.js/styles/hybrid.css';
-// import 'highlight.js/styles/ir-black.css';
-// import 'highlight.js/styles/rainbow.css';
-// import 'highlight.js/styles/xt256.css';
-hljs.registerLanguage("rust", rust);
-hljs.registerLanguage("c", c);
 
 const Solutions = () => {
   return (
