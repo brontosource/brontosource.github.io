@@ -25,13 +25,13 @@ const Rust = () => {
       innerContainerClasses="flex flex-col gap-y-4"
     >
       <div>
-        <TitleText>Upgrade C/C++ to Idiomatic Rust</TitleText>
+        <TitleText>Upgrading C/C++ to Idiomatic Rust</TitleText>
         <SubtitleText>
           Memory unsafe code is a major source of security vulnerabilities that
           both the US and EU Cyber Security Offices are pressuring companies to
           deal with.
           <p />
-          BrontoSource can move your codebase from C/C++ to Rust at scale.
+          BrontoSource can move your codebase from C or C++ to Rust at scale.
         </SubtitleText>
       </div>
       <div className="flex lg:flex-row flex-col h-full w-full justify-between gap-6">
