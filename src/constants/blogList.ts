@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import LargeScaleChanges from "./Blogs/LargeScaleChanges";
 import WhyMigrateToRust from "./Blogs/WhyMigrateToRust";
 import { authorType } from "./authors";
