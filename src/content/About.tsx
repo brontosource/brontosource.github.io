@@ -41,7 +41,7 @@ const About = () => {
       <div className="text-center mb-8">
         <TitleText DarkMode>About Us</TitleText>
         <SubtitleText DarkMode>
-          Founded in September 2024, by a team of energetic ex-Google engineers.
+          Founded in September 2024 by a team of energetic ex-Google engineers.
           We love seeing codebases flourish and building tools that anticipate
           the entire software lifecycle. We bring decades of experience
           maintaining the world's largest codebases, keeping them healthy and

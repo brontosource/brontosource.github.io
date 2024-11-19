@@ -31,7 +31,7 @@ const Hero = () => {
               Our approach combines decades of experience keeping the world's
               largest codebases up to date with innovative algorithms and AI
               that provide incremental, understandable, and traceable migrations
-              that scale sublinearly in the size of the code base.
+              that scale sublinearly with the size of the codebase.
             </SubtitleText>
           </div>
         </div>
