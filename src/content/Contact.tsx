@@ -48,9 +48,8 @@ const Contact = () => {
       <div>
         <TitleText DarkMode>Contact Us</TitleText>
         <SubtitleText DarkMode>
-          Things are early days for us at the moment but if you are interested
-          in partnering with us as an early customer or investor, please reach
-          out!
+          If you are interested in learning more, partnering with us as an early
+          customer, or investing, please reach out!
         </SubtitleText>
       </div>
       <form
