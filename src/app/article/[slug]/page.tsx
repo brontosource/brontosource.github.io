@@ -10,6 +10,7 @@ import SectionContainer from "@/ui/SectionContainer";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import TitleText from "@/ui/TitleText";
+import { redirect } from "next/navigation";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID || "",
@@ -112,6 +113,10 @@ export async function generateMetadata(
     content_type: "articles",
     "fields.slug": slug,
   });
+
+  if (items.length === 0) {
+    redirect("/not-found");
+  }
 
   const { title, seoPreviewImage, seoDescription } = items[0]
     .fields as unknown as landingPageFieldsType;
