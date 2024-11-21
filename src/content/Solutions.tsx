@@ -11,9 +11,9 @@ const Solutions = () => {
     >
       <TitleText>Our Solution</TitleText>
       <SubtitleText>
-        BrontoSource provides incremental, reproducible, understanble migrations
+        BrontoSource provides incremental, reproducible, understandable migrations
         that fit into existing workflows leaving behind clean, idiomatic code.
-        BrontoSource migrates components of large systems independetly, allowing
+        BrontoSource migrates components of large systems independently, allowing
         developers to extend their codebase while the upgrade progresses in the
         background, modernizing your codebase and eliminating long-term risks.
         <p />
