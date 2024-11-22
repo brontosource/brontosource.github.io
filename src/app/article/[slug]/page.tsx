@@ -73,9 +73,7 @@ const renderOption = {
     [BLOCKS.PARAGRAPH]: (_: any, children: any) => {
       return children.map((child: any) => {
         if (typeof child === "string") {
-          return (
-            <p className="text-base md:text-xl my-4 font-serif">{children}</p>
-          );
+          return <p className="text-base md:text-2xl my-4">{children}</p>;
         }
         return (
           <div className="text-base md:text-xl my-4 font-serif">{child}</div>
@@ -127,12 +125,13 @@ export async function generateMetadata(
     openGraph: {
       images: [`https:${seoPreviewImage.fields.file.url}`],
     },
-    twitter: {
-      title: title as string,
-      description: seoDescription as string,
-      images: [`https:${seoPreviewImage.fields.file.url}`],
-      creator: "@Exmaple_Twitter",
-    },
+    // twitter: {
+    //   title: title as string,
+    //   description: seoDescription as string,
+    //   images: [`https:${seoPreviewImage.fields.file.url}`],
+    //   creator: "@Exmaple_Twitter",
+    // },
+    // Reddit, LinkedIn to be tested
   };
 }
 
