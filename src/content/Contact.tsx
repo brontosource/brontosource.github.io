@@ -67,6 +67,7 @@ const Contact = () => {
           field={"name"}
           placeholder={"Your Name"}
           inputType={"text"}
+          isRequired
         >
           <PersonIcon />
         </InputBox>
@@ -82,6 +83,7 @@ const Contact = () => {
           field={"email"}
           placeholder={"Your Email"}
           inputType={"email"}
+          isRequired
         >
           <MailIcon />
         </InputBox>
