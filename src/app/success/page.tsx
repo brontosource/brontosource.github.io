@@ -1,7 +1,5 @@
 import Button from "@/ui/button";
 import TitleText from "@/ui/TitleText";
-import Link from "next/link";
-import React from "react";
 
 const SuccessPage = () => {
   return (
