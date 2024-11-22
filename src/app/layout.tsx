@@ -10,7 +10,8 @@ const baloo = Baloo_2({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BrontoSource",
-  description: "A system that transforms C code to idiomatic, safe Rust with a human intervention rate below 1 intervention per 100,000 lines of code that scales sublinearly with the size of the codebase being migrated.",
+  description:
+    "A system that transforms C code to idiomatic, safe Rust with a human intervention rate below 1 intervention per 100,000 lines of code that scales sublinearly with the size of the codebase being migrated.",
 };
 
 export default function RootLayout({
@@ -19,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light" className="scroll-smooth">
-      <body className={`${baloo.className} bg-info`}>
+    <html lang="en" data-theme="light" className="scroll-smooth min-h-screen">
+      <body className={`${baloo.className} bg-info h-full`}>
         <Navbar>
           <NavLinks />
         </Navbar>
