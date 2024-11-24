@@ -3,6 +3,13 @@ import Contact from "@/content/Contact";
 import Solutions from "@/content/Solutions";
 import Hero from "@/content/Hero";
 import Rust from "@/content/Rust";
+import KeyFeatures from "@/content/KeyFeatures";
+import { createClient } from "contentful";
+
+export const ContentfulClient = createClient({
+  space: process.env.CONTENTFUL_SPACE_ID || "",
+  accessToken: process.env.CONTENTFUL_ACCESS_KEY || "",
+});
 
 export default function Home() {
   return (
@@ -10,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Solutions />
+      <KeyFeatures />
       <Rust />
       <Contact />
     </main>

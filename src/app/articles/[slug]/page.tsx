@@ -5,21 +5,16 @@ import Image from "next/image";
 import parse from "html-react-parser";
 import { Metadata, ResolvingMetadata } from "next";
 import { landingPageFieldsType } from "@/types/contentfulTypes";
-import { createClient } from "contentful";
 import SectionContainer from "@/ui/SectionContainer";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import TitleText from "@/ui/TitleText";
 import { redirect } from "next/navigation";
-
-const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID || "",
-  accessToken: process.env.CONTENTFUL_ACCESS_KEY || "",
-});
+import { useArticle, useArticles } from "@/hooks/useArticle";
 
 export const generateStaticParams = async () => {
-  const { items } = await client.getEntries({ content_type: "articles" });
-  return items.map((article) => ({
+  const { articles } = await useArticles();
+  return articles.map((article) => ({
     slug: article.fields.slug?.toString(),
   }));
 };
@@ -107,17 +102,13 @@ export async function generateMetadata(
   // read route params
   const slug = params.slug;
 
-  const { items } = await client.getEntries({
-    content_type: "articles",
-    "fields.slug": slug,
-  });
-
-  if (items.length === 0) {
+  const article = await useArticle(slug);
+  if (!article) {
     redirect("/not-found");
   }
 
-  const { title, seoPreviewImage, seoDescription } = items[0]
-    .fields as unknown as landingPageFieldsType;
+  const { title, seoPreviewImage, seoDescription } =
+    article.fields as unknown as landingPageFieldsType;
 
   return {
     title: title as string,
@@ -136,20 +127,20 @@ export async function generateMetadata(
 }
 
 const Article = async ({ params }: LandingPageProps) => {
-  const { items } = await client.getEntries({
-    content_type: "articles",
-    "fields.slug": params?.slug,
-  });
-
+  const slug = params.slug;
+  const article = await useArticle(slug);
+  if (!article) {
+    redirect("/not-found");
+  }
   const articleContent = documentToReactComponents(
-    items[0].fields.content as Document,
+    article.fields.content as Document,
     renderOption
   );
 
   return (
     <main className="flex flex-col items-center snap-y scroll-smooth gap-y-16 lg:gap-y-32 bg-base-100">
       <SectionContainer sectionName={params.slug}>
-        <TitleText>{items[0].fields.title as string}</TitleText>
+        <TitleText>{article.fields.title as string}</TitleText>
         <div className="text-primary-content">
           <div className="first-letter:text-6xl align-middle">
             {articleContent}

@@ -1,11 +1,18 @@
-import CharlotteWorkingOnLaptopFromBed from "../../public/Charlotte-WorkingOnLaptopFromBed.png";
-import CharlotteHoldingRustLogo from "../../public/Charlotte-HoldingRustLogo.png";
 import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
 import FeatCard from "@/components/FeatCard";
+import { useArticles } from "@/hooks/useArticle";
 
-const KeyFeatures = () => {
+const KeyFeatures = async () => {
+  const { articles } = await useArticles();
+
+  // If there are less than 2 articles, don't render the section
+  if (!articles || articles.length <= 1) return null;
+
+  // Get the first 2 articles to feature
+  const FeatArticles = articles.splice(0, 2);
+
   return (
     <SectionContainer
       sectionName="key-features"
@@ -23,27 +30,23 @@ const KeyFeatures = () => {
         </SubtitleText>
       </div>
       <div className="flex md:grid md:grid-flow-col gap-4 flex-wrap">
-        <FeatCard
-          image={{
-            data: CharlotteWorkingOnLaptopFromBed,
-            alt: "Charlotte Bronto working on laptop from bed",
-          }}
-          title={"lorem ipsum dolor sit amet"}
-          content={
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"
-          }
-          showButton
-        />
-        <FeatCard
-          image={{
-            data: CharlotteHoldingRustLogo,
-            alt: "Charlotte Bronto Looking at Rust, C, and C++ logos",
-          }}
-          title={"lorem ipsum dolor sit amet"}
-          content={
-            "lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molest repudiandae voluptates nostrum doloremque, totam nemo dolores quis illo ex incidunt quasi cum nobis maiores fuga odio! Modi, vel sequi!"
-          }
-        />
+        {FeatArticles.map((article: any) => (
+          <FeatCard
+            key={article.sys.id}
+            image={{
+              data: `https:${article.fields.seoPreviewImage.fields.file.url}`,
+              width:
+                article.fields.seoPreviewImage.fields.file.details.image.width,
+              height:
+                article.fields.seoPreviewImage.fields.file.details.image.height,
+              alt: article.fields.seoPreviewImage.fields.description,
+            }}
+            title={article.fields.title}
+            content={article.fields.seoDescription}
+            redirectURL={`/articles/${article.fields.slug}`}
+            showButton
+          />
+        ))}
       </div>
     </SectionContainer>
   );
