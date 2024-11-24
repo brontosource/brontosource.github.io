@@ -14,7 +14,6 @@ export const useArticle = async  (slug: string) => {
         "fields.slug": slug,
       });
 
-    console.log({items});
     if (items.length === 0) {
         return null;
     }

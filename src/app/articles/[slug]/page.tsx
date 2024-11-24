@@ -31,7 +31,6 @@ const renderOption = {
     [MARKS.CODE]: (code: React.ReactNode) => {
       const codeText = code as string;
       const languageSyntax = codeText.match(/(```)[\w]+(```)/);
-      console.log(languageSyntax?.[0].replaceAll("```", ""));
       const codeOnly = codeText.replace(languageSyntax?.[0] as string, "");
       return (
         <SyntaxHighlighter
