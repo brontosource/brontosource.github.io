@@ -3,6 +3,7 @@ import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
 import FeatCard from "@/components/FeatCard";
 import { useArticles } from "@/hooks/useArticle";
+import Link from "next/link";
 
 const KeyFeatures = async () => {
   const { articles } = await useArticles();
@@ -48,6 +49,9 @@ const KeyFeatures = async () => {
           />
         ))}
       </div>
+      <Link href="/articles" className="btn btn-primary max-w-28 mx-auto">
+        All Articles
+      </Link>
     </SectionContainer>
   );
 };
