@@ -2,11 +2,13 @@ import SectionContainer from "@/ui/SectionContainer";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
 import FeatCard from "@/components/FeatCard";
-import { useArticles } from "@/hooks/useArticle";
+import { useAllArticles } from "@/hooks/useArticle";
 import Link from "next/link";
 
 const KeyFeatures = async () => {
-  const { articles } = await useArticles();
+  // Uncomment the line below to fetch all articles instead of only live articles
+  // const { articles } = await useAllArticles();
+  const { articles } = await useAllArticles();
 
   // If there are less than 2 articles, don't render the section
   if (!articles || articles.length <= 1) return null;

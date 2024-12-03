@@ -1,11 +1,13 @@
 import FeatCard from "@/components/FeatCard";
-import { useArticles } from "@/hooks/useArticle";
+import { useLiveArticles, useAllArticles } from "@/hooks/useArticle";
 import SectionContainer from "@/ui/SectionContainer";
 import SubtitleText from "@/ui/SubtitleText";
 import TitleText from "@/ui/TitleText";
 
 const ArticlesPage = async () => {
-  const { articles } = await useArticles();
+  const { articles } = await useLiveArticles();
+  // Uncomment the line below to fetch all articles instead of only live articles
+  // const { articles } = await useAllArticles();
   return (
     <main className="flex flex-col items-center snap-y scroll-smooth gap-y-16 lg:gap-y-32 bg-base-100">
       <SectionContainer
