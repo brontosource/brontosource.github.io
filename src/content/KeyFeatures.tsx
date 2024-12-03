@@ -9,7 +9,7 @@ const KeyFeatures = async () => {
   const { articles } = await useArticles();
 
   // If there are less than 2 articles, don't render the section
-  if (!articles || articles.length <= 1) return null;
+  if (!articles || articles.length < 1) return null;
 
   // Get the first 2 articles to feature
   const FeatArticles = articles.splice(0, 2);
