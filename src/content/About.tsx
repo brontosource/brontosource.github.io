@@ -1,29 +1,14 @@
-import AboutDev from '@/components/AboutDev'
-import AndyHeadshot from '../../public/andy.webp'
-import MattHeadshot from '../../public/matt.webp'
+import AboutDev from "@/components/AboutDev";
 import TopWave from "../../public/about-top-wave.svg";
 import BotWave from "../../public/about-bot-wave.svg";
 import TitleText from "@/ui/TitleText";
 import SubtitleText from "@/ui/SubtitleText";
 import SectionContainer from "@/ui/SectionContainer";
+import { authors } from "@/constants/authors";
 
 const About = () => {
-  const Matt = {
-    name: "Matthew Kulukundis",
-    title: "CEO, BrontoSource",
-    image: {
-      data: MattHeadshot,
-      alt: "Headshot of Matt, CEO & co-founder",
-    },
-  };
-  const Andy = {
-    name: "Dr. Andrew Soffer",
-    title: "CTO, BrontoSource",
-    image: {
-      data: AndyHeadshot,
-      alt: "Headshot of Andy, CTO & co-founder",
-    },
-  };
+  const { Matt, Andy } = authors;
+
   return (
     <SectionContainer
       sectionClasses="text-left h-fit bg-base-300 relative py-2 my-10 md:my-0 py-[140px] xl:py-[180px] 2xl:py-[200px] min-[2000px]:py-[240px] min-[2200px]:py-[280px] min-[2400px]:py-[320px]"
@@ -58,7 +43,7 @@ const About = () => {
         <SubtitleText DarkMode>
           Founded in September 2024 by a team of energetic ex-Google engineers.
           We love seeing codebases flourish and building tools that anticipate
-          the entire software lifecycle.  We bring decades of experience
+          the entire software lifecycle. We bring decades of experience
           maintaining the world's largest codebases, keeping them healthy and
           making them self-healing.
         </SubtitleText>
@@ -69,16 +54,17 @@ const About = () => {
           Ecosystems organization as a Principal Engineer. During that time he
           designed language and library features for migration, as well as
           directly planning and executing multiple migrations of previously
-          unapproachable difficulty. Rust’s {" "}
+          unapproachable difficulty. Rust’s{" "}
           <a href="https://doc.rust-lang.org/std/collections/struct.HashMap.html">
             <code>std::collections::HashMap</code>
-          </a>
-          {" "} is based directly on {" "}
-          <a href="https://www.youtube.com/watch?v=ncHmEUmJZf4">
-            his work
-          </a>.
+          </a>{" "}
+          is based directly on{" "}
+          <a href="https://www.youtube.com/watch?v=ncHmEUmJZf4">his work</a>.
         </AboutDev>
-        <AboutDev flipped image={Andy.image} title={Andy.title}
+        <AboutDev
+          flipped
+          image={Andy.image}
+          title={Andy.title}
           name={Andy.name}
         >
           Andy spent the past eight years at Google where he led the C++
@@ -92,4 +78,4 @@ const About = () => {
   );
 };
 
-export default About
+export default About;
