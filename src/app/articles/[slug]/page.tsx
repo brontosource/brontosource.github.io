@@ -10,10 +10,10 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import TitleText from "@/ui/TitleText";
 import { redirect } from "next/navigation";
-import { useArticle, useArticles } from "@/hooks/useArticle";
+import { useArticle, useLiveArticles } from "@/hooks/useArticle";
 
 export const generateStaticParams = async () => {
-  const { articles } = await useArticles();
+  const { articles } = await useLiveArticles();
   return articles.map((article) => ({
     slug: article.fields.slug?.toString(),
   }));
